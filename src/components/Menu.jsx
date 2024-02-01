@@ -34,10 +34,21 @@ const NavMenu = styled.nav`
   a {
     color: inherit;
     text-decoration: none;
-    padding: 5px;
-  }
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s, color 0.3s;
 
-  &.active {
-    border-bottom: 2px solid #61dafb;
+    font-size: 16px;
+    font-weight: 500;
+
+    &:hover {
+      border-bottom-color: #61dafb;
+      color: #61dafb;
+    }
+
+    &.active {
+      border-bottom-color: #61dafb;
+      color: #61dafb;
+    }
   }
 `;

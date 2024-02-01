@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Head from "next/head";
+import Layout from "@/components/layout";
 export default function About() {
   return (
     <>

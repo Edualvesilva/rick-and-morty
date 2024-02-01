@@ -3,7 +3,7 @@ export default function Layout({ children }) {
   return (
     <div>
       <Menu />
-      <main></main>
+      <main>{children}</main>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styled from "styled-components";
+
 export async function getStaticProps() {
   try {
     const resposta = await fetch(`https://rickandmortyapi.com/api/character`);

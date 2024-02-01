@@ -11,7 +11,6 @@ export default function Home() {
         <meta name="keywords" content="Rick and Morty" />
       </Head>
       <StyledHome>
-        <Layout />
         <h1>Welcome to Rick and Morty Website</h1>
         <p>here you can see the characters and Some "facts about them"</p>
       </StyledHome>
