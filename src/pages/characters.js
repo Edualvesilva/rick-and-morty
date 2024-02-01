@@ -1,3 +1,4 @@
+import Head from "next/head";
 import styled from "styled-components";
 export async function getStaticProps() {
   try {
@@ -29,17 +30,22 @@ export default function Characters({ dados }) {
   }
 
   return (
-    <StyledCharacters>
-      <h1>Characters</h1>
-      {results.map((character) => (
-        <div key={character.id} className="character-card">
-          <h2>{character.name}</h2>
-          <img src={character.image} alt={character.image} />
-          <p>Status: {character.status}</p>
-          <p>Species: {character.species}</p>
-        </div>
-      ))}
-    </StyledCharacters>
+    <>
+      <Head>
+        <title>Rick & Morty - Characters</title>
+      </Head>
+      <StyledCharacters>
+        <h1>Characters</h1>
+        {results.map((character) => (
+          <div key={character.id} className="character-card">
+            <h2>{character.name}</h2>
+            <img src={character.image} alt={character.image} />
+            <p>Status: {character.status}</p>
+            <p>Species: {character.species}</p>
+          </div>
+        ))}
+      </StyledCharacters>
+    </>
   );
 }
 
