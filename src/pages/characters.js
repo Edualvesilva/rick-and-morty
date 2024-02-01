@@ -36,7 +36,6 @@ export default function Characters({ dados }) {
         <title>Rick & Morty - Characters</title>
       </Head>
       <StyledCharacters>
-        <h1>Characters</h1>
         {results.map((character) => (
           <div key={character.id} className="character-card">
             <h2>{character.name}</h2>
@@ -51,19 +50,22 @@ export default function Characters({ dados }) {
 }
 
 const StyledCharacters = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
   padding: 20px;
 
   h1 {
     font-size: 2em;
-    color: #61dafb; /* Rick and Morty blue color */
-    margin-bottom: 20px;
+    color: #61dafb;
+    margin: 20px;
   }
 
   .character-card {
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
     text-align: left;
 
     h2 {

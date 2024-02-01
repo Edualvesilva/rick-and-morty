@@ -12,7 +12,35 @@ export default function Home() {
       </Head>
       <StyledHome>
         <h1>Welcome to Rick and Morty Website</h1>
-        <p>here you can see the characters and Some "facts about them"</p>
+        <p>
+          Explore the World of Rick and Morty and learn interesting facts about
+          them
+        </p>
+
+        <section>
+          <h2>Fun Facts</h2>
+          <ul>
+            <li>
+              Rick and Morty is an animated science fiction sitcom created by
+              Justin Roiland and Dan Harmon.
+            </li>
+            <li>The show first premiered on Adult Swim in December 2013.</li>
+          </ul>
+        </section>
+
+        <iframe
+          width="700"
+          height="450"
+          src="https://www.youtube.com/embed/I1Q4FQNSb5c?si=pi0DYZHc3bYelesP"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+        <p className="rights">
+          © 2024 Rick and Morty Website. All rights reserved.
+        </p>
       </StyledHome>
     </>
   );
@@ -34,5 +62,9 @@ const StyledHome = styled.div`
   p {
     font-size: 1.2em;
     color: var(--text-color);
+  }
+
+  ul {
+    list-style: none;
   }
 `;
