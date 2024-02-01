@@ -6,9 +6,9 @@ export default function Document() {
       <Head>
         <link
           rel="shortcut icon"
-          href="public/morty-favicon.png"
+          href="/images/rick-icon.png"
           type="image/png"
-          sizes="180x180"
+          sizes="240x240"
         />
         <meta name="author" content="Eduardo alves da Silva" />
       </Head>
