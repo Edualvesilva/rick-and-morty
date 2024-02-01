@@ -19,7 +19,6 @@ export async function getStaticProps() {
   }
 }
 export default function Characters({ dados }) {
-  console.log(dados);
   if (!dados || !dados.results) {
     return <p>Loading...</p>;
   }
