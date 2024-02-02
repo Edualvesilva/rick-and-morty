@@ -1,6 +1,5 @@
 import Head from "next/head";
 import styled from "styled-components";
-
 export default function Home() {
   return (
     <>
@@ -28,7 +27,6 @@ export default function Home() {
         </section>
 
         <iframe
-          width="700"
           height="450"
           src="https://www.youtube.com/embed/I1Q4FQNSb5c?si=pi0DYZHc3bYelesP"
           title="YouTube video player"
@@ -63,5 +61,9 @@ const StyledHome = styled.div`
 
   ul {
     list-style: none;
+  }
+
+  iframe {
+    width: 100%;
   }
 `;
