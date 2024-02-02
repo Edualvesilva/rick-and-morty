@@ -26,13 +26,15 @@ export default function Home() {
           </ul>
         </section>
 
-        <iframe
-          height="450"
-          src="https://www.youtube.com/embed/I1Q4FQNSb5c?si=pi0DYZHc3bYelesP"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        ></iframe>
-
+        <div className="iframeContainer">
+          <iframe
+            width="100%"
+            height="450"
+            src="https://www.youtube.com/embed/I1Q4FQNSb5c?si=pi0DYZHc3bYelesP"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
+        </div>
         <p className="rights">
           © 2024 Rick and Morty Website. All rights reserved.
         </p>
@@ -61,9 +63,12 @@ const StyledHome = styled.div`
 
   ul {
     list-style: none;
+    color: #2ecc71;
   }
 
-  iframe {
+  .iframeContainer {
     width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
   }
 `;
