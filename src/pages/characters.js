@@ -7,7 +7,7 @@ export async function getStaticProps() {
     const dados = await resposta.json();
 
     if (!resposta.ok) {
-      throw new Error(`Erro: ${resposta.staus} - ${resposta.statusText}`);
+      throw new Error(`Erro: ${resposta.status} - ${resposta.statusText}`);
     }
 
     return {
