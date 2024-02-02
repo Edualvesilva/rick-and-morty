@@ -15,7 +15,7 @@ export default function Home() {
           them
         </p>
 
-        <section>
+        <section className="styledSection">
           <h2>Fun Facts</h2>
           <ul>
             <li>
@@ -63,12 +63,30 @@ const StyledHome = styled.div`
 
   ul {
     list-style: none;
-    color: #2ecc71;
   }
 
   .iframeContainer {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
+  }
+
+  .styledSection {
+    text-align: center; /* Center the content within the section */
+    max-width: 600px;
+    margin: 0 auto;
+    h2 {
+      color: #3498db; /* Blue color for the section heading */
+    }
+
+    ul {
+      padding: 0;
+    }
+
+    li {
+      font-size: 1.2em;
+      color: #2ecc71;
+      margin: 5px 0;
+    }
   }
 `;
