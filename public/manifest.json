@@ -1,0 +1,19 @@
+{
+  "short_name": "Rick And Morty",
+  "name": "Rick and Morty",
+  "description": "A Website about the show",
+  "icons": [
+    {
+      "src": "images/rick-icon.png",
+      "type": "image/png",
+      "sizes": "240x240"
+    }
+  ],
+  "start_url": "/",
+  "scope": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "orientation": "any",
+  "lang": "en"
+}
